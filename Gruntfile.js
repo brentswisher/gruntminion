@@ -58,6 +58,10 @@ module.exports = function(grunt) {
         files: ['<%= jshint.files %>'],
         tasks: ['jshint']
       },
+      sass: {
+        files: ['**/*.scss'],
+        tasks: ['sass']
+      },
       livereload: {
         options: { livereload: true },
         files: ['**/*.cfm','**/*.cfc','**/*.css','<%= jshint.files %>','!**/*_post.cfm']
